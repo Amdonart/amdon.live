@@ -1,0 +1,17 @@
+{
+  "name": "amdon-live",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Amdons statischer Linkhub",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/preview.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "npm run check && node --test tests/preview.test.mjs",
+    "build": "npm run check && node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs dist"
+  }
+}
